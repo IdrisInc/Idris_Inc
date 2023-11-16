@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="deco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-/6ovYbTsr5FbGaQp+I/XjCtWP4Sd0/6k0fi3WIBwoM4qchbdN1M/2LlTGSmK52U5z2+e5RWg50xIyjeX6qHq0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Add your own styling here */
+        /* ... */
+
+        /* Add a class for the background color change */
+        .alternate-bg {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add a button to trigger color change -->
+    <!-- <button onclick="changeBackgroundColor()">Toggle Background Color</button> -->
+
+    <section>
+        <div class="logo">
+            <div class="logo-left"></div>
+            <div class="search">
+                <form action="">
+                    <input type="search" placeholder="Search">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#more">More</a></li>
+                <!-- Button for changing color -->
+                <li><button onclick="changeBackgroundColor()">Change Color</button></li>
+            </ul>
+        </div>
+    </section>
+    
+    
+
+    <section>
+        <div class="content1">
+            <div class="info">
+                <h2>Personal Information</h2>
+                <ul>
+                    <li>Name: Ally Idris</li>
+                    <li>Nationality: Tanzanian</li>
+                    <li>Gender: Male</li>
+                    <li>Contacts: 0672 770 039</li>
+                    <li>Email: idrisinc03@gmail.com</li>
+                    <li>Address: Dar es Salaam</li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="image/PXL_20230908_053803127.PORTRAIT.jpg" alt="Idris" width="300" height="400">
+                
+                <div class="dropdown">
+                    <img src="image/inc.png" alt="Inc">
+                    <div class="description">Idris Inc</div>
+                </div>
+            
+            </div>
+            <!-- <div class="img">
+                <img src="image/PXL_20230908_053803127.PORTRAIT.jpg" alt="Idris" width="300" height="400">
+            </div> -->
+        </div>
+    </section>
+
+    <section>
+        <div class="contents">
+            <div class="education">
+                <h2>Education Background</h2>
+                <ul>
+                    <li>2015-2018: Emaoi Primary school</li>
+                    <li>2019-2021: Miono High School</li>
+                    <li>2021-Present: Dar es Salaam Institute of Technology</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h2>Personal Skills</h2>
+                <ul>
+                    <li>Cloud Computing</li>
+                    <li>Networking</li>
+                    <li>Programming</li>
+                    <li>Graphics</li>
+                    <!-- <li>Teaching</li> -->
+                    <li>Motivational speaker</li>
+                </ul>
+            </div>
+            <div class="work">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Reading</li>
+                    <li>Football</li>
+                    <li>Sleeping</li>
+                    <li>Singing</li>
+                    <!-- <li>playing games</li> -->
+                    <li>coding</li>
+                    <!-- <li>Watch movie</li> -->
+                    <!-- <li>Drawing</li> -->
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="links">
+            <div class="fb">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="https://logowik.com/content/uploads/images/633_facebook_icon.jpg" alt="Facebook"></a>
+            </div>
+            <div class="insta">
+              <a href="https://www.instagram.com/mightally/" target="_blank" rel="noopener noreferrer"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXaNFhHN3tIzDCWjaI7wT_v8F-vZcq5vbPex8XsXv2Zw&s" alt="Instagram"></a>
+            </div>
+            <div class="x">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.veeforu.com/wp-content/uploads/2023/07/Twitter-new-cross-mark-Icon-PNG-X-1024x576.jpg" alt="Twitter"></a>
+            </div>
+            <div class="git">
+              <a href="https://github.com/IdrisInc/Web" target="_blank" rel="noopener noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="GitHub"></a>
+            </div>
+          </div>
+          
+    </section>
+
+    <section>
+        <footer>
+            <div class="more">
+                <ul>
+                    <li>About us</li>
+                    <li>Terms and condition</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </footer>
+        
+    </section>
+
+    <div class="year">
+        <p>&copy 2023, Idris Inc</p>
+    </div>
+
+   
+  <!-- Include the JavaScript script at the end of the body -->
+<script>
+    // JavaScript function to toggle background color
+    function changeBackgroundColor() {
+        document.body.classList.toggle('alternate-bg');
+    }
+</script>
+
+<button id="scrollTopBtn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Include the JavaScript script at the end of the body -->
+    <script>
+        // JavaScript function to toggle background color
+        function changeBackgroundColor() {
+            document.body.classList.toggle('alternate-bg');
+        }
+
+        // JavaScript function to show/hide scroll to top button
+        window.onscroll = function() { scrollFunction(); };
+
+        function scrollFunction() {
+            var scrollBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollBtn.style.bottom = "20px";
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.bottom = "-50px"; /* Move the button off-screen when not needed */
+            }
+        }
+
+        // JavaScript function to smoothly scroll to the top
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>

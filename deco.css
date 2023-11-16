@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.search{
+    padding: 5px;
+    
+}
+
+.search input[type=search]{
+    padding: 9px;
+    outline: none;
+    border-radius: 10px;
+    
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    
+
+}
+.navigation ul li{
+    float: left; 
+    
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 14px 16px;
+    /* background-color: #cec9c9; */
+    text-decoration: none;
+    color: white;
+}
+
+.content1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 10px;
+  height: auto;
+  width: 100%;
+
+    
+
+}
+.content1 h2{
+    /* border-bottom: 5px solid rgb(182, 177, 177); */
+    text-align: center;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 1px gray;
+    color: white;
+    background-color: #333;
+    opacity: 0.7;
+    width: 75%;
+}
+
+.content1 ul{
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 40px;
+    box-shadow: 2px 2px 1px gray;
+    padding: 10px;
+    list-style-type: none;
+    background-color: #333;
+    color: white;
+    opacity: 0.7;
+    width: 75%;
+
+
+}
+.content1 ul li{
+    padding: 20px;
+    /* border-bottom: 1px solid; */
+    
+}
+.content1 .img{
+    margin-right: 10px;
+    /* background-color: blueviolet; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    position: relative;
+    display: inline-block;
+}
+.content1 .img img{
+  margin-right: 40px;
+    margin-top: 20px;
+    padding-top: 25px;
+    width: 100%; /* Make the images fill their container */
+    border-radius: 50px; 
+}
+
+.content1 .dropdown{
+   top: 3px;
+   opacity: 0.6;
+    display: none;
+    position: absolute;  
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content1 .img:hover .dropdown{
+    display: block;
+    
+} 
+
+.content1 .description{
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+.contents{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+   gap: 200px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid gray;
+    margin-top: 20px;
+    margin-left: 60px;
+    opacity: 0.7;
+    /* background-color: #333; */
+    /* color: white; */
+
+}
+
+.contents .education:hover{
+    transform: scale(1.1,1.1);
+}
+.contents .skills:hover{
+    transform: scale(1.1,1.1);
+}
+.contents .work:hover{
+    transform: scale(1.1,1.1);
+}
+
+.contents  h2{
+text-align: center;
+margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 1px gray;
+    color: white;
+    background-color: #333;
+}
+
+.contents  ul{
+   margin-top: 15px;
+   
+   background-color: #333;
+    box-shadow: 2px 2px 1px gray;
+    color: white;
+}
+
+.contents li{
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.links {
+    margin-top: 15px;
+    display: flex;
+    gap: 25px;
+     margin-left: 35px;
+
+  }
+
+  .links img {
+box-shadow: 2px 1px 1px ;
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+   
+  }
+
+  .links img:hover{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  .more{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+    opacity: 0.7;
+  }
+  .more ul{
+    list-style-type: none;
+  }
+
+  .more li{
+    padding: 5px;
+  }
+
+  .year{
+    text-align: center;
+  }
+
+
+
+  @media (max-width: 600px) {
+    /* Add responsive styles here */
+    .content1 {
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .content1 .img {
+        margin-left: 0;
+    }
+}
+
+
+        /* Styles for the "scroll to top" button */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #00bcd4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 20px;
+            cursor: pointer;
+            transition: bottom 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+.education,
+.skills,
+.work {
+    width: 20%; /* Adjust the percentage as needed */
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+.info {
+    width: 60%; /* Adjust the percentage as needed */
+    margin-right: 20px; /* Add margin for spacing */
+}
